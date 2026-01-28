@@ -1,0 +1,61 @@
+/* Reset */
+* {margin: 0;box-sizing: border-box;}
+body {font-family: Arial, sans-serif;line-height: 1.6;}
+/* Global */
+.container {width: 90%; max-width: 1100px; margin: auto;}
+.section {padding: 60px 0;}
+.gray {background-color: #f4f4f4;}
+.section-title {text-align: center; margin-bottom: 30px;}
+.center {text-align: center;}
+/* Header */
+.header {background: #004add; color: #fff; padding: 15px 0;}
+.heade-flex {display:flex; justify-content: space-between; align-items: center;}
+.header nav a {color: #fff; margin-left: 15px; text-decoration: none;}
+/* Hero */
+.hero {background: #e6f0ff; height: 70vh; display: flex; align-items: center;}
+.hero h2 {font-size: 2,2rem; margin-bottom: 10px;}
+.btn {
+    display: inline-block; margin-top: 15px; padding: 10px 20px; background: #004aad;
+    color: #fff; text-decoration: none; border-radius: 5px;
+}
+/* Grid Program */
+.grid-program {display: grid; grid-template-columns: repeat(4,1fr); gap: 20px;}
+.card {background: #fff; padding: 20px; text-align: center; border-radius: 6px;}
+/* Flex Keunggulan */
+.flex-keunggulan {display: flex; justify-content: space-between; gap: 20px;}
+.box {
+    flex: 1; background: #004aad;color: #fff; padding: 25px;
+    text-align: center; border-radius: 6px;}
+/* CTA */
+.cta {background: #004aad; color: #fff; text-align: center; padding: 50px 0;}
+/* Footer */
+/*
+   perbedaan .footer dan .footer-flex adalah:
+   .footer adalah elemen pembungkus utama untuk bagian footer dasri halaman web.
+   .footer-fles adalah elemen di dalam footer yang menggunakan flexbox
+   untuk mengatur tata letak konten di dalam footer tersebut.
+*/
+.footer {background: #222; color: #fff; padding: 20px 0;}
+.footer-flex {display: flex; justify-content: space-between;}
+
+/* ==================== */
+/* Responsive (Media Query) */
+/* ==================== */
+/*
+    @media adalah sebuah aturan CSS yang digunakan untuk menerapkan gaya berbeda
+    tergantung pada kondisi tertentu, seperti ukuran layar atau orientasi perangkat.
+@media (max-width: 768px) {
+    .header-flex,
+    .footer-flex {flex-direction: column; text-align: center;}
+    .header nav {margin-top: 10px;}
+    .grid-program {grid-template-columns: repeat(2, 1fr);}
+    .flex-keunggulan {flex-direction: column;}
+    .hero {height: auto; padding: 60px 0; text-align: center;}
+}
+
+@media (max-width: 480px) {
+    .grid-program {grid-template-columns: 1fr;}
+    .hero h2 {font-size: 1.8rem;}
+}
+
+*virly*
